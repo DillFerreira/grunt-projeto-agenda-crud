@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html ng-app="myApp" >
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Cadastre seus contatos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projeto Agenda</title>
+    <link rel="stylesheet" href="bower_components/bootswatch/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/estilo.css">
+    <link href="assests/sass/estilo.css" rel="stylesheet">
+</head>
+<body>
+    <div ng-include="'paginas/menu.html'"></div>
+
+    <div class="container" ng-view></div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/rotas.js"></script>
+    <script src="app/config.js"></script>
+
+    <script src="app/controllers/home-controller.js"></script>
+    <script src="app/controllers/contato/consulta-controller.js"></script>
+    <script src="app/controllers/contato/inclusao-controller.js"></script>
+    <script src="app/controllers/contato/alteracao-controller.js"></script>
+    <script src="app/controllers/contato/exclusao-controller.js"></script>
+    <!-- Grunt -->
+    <script src="main.js"></script>
+    <!-- Fim do menu -->
+    <!-- Conteudo -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/agenda.jpg">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Cadastrar</h3>
+                <p>Para cadastrar basta ter nome, sobrenome e tefone e então clique no botão, uma forma prática e facil de manter seus contatos seguro.</p>
+                <a class="btn btn-success" href="paginas/cadastro.html">Cadastrar <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>       
+        <hr>
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/agenda.jpg">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Consulte</h3>
+                <p>Caso já tenha cadastrado o seu contato, clique no botão abaixo para consultar, onde você ira poder remover, excluir e editar o número adicionado.</p>
+                <a class="btn btn-success" href="paginas/consulta.html">Consulte <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Documentação</h3>
+                <p>Nesta opção mostramos como criamos o projeto, quais foram os procedimentos para instalação e criação da ferramenta. Caso, tenha interesse basta clicar no botão abaixo.</p>
+                <a class="btn btn-success" href="paginas/documentacao.html">Saiba mais<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+    </div>
+    <!-- Fim conteudo -->
+    <hr>
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <h2 class="text-center">Tecnologias Utilizadas</h2>
+        <div class="container" >
+            <img src="img/npm.png" width="120px" /><b> + </b>
+            <img src="img/bower.png" width="120px" /><b> + </b>
+            <img src="img/grut.png" width="120px" /><b> + </b>
+            <img src="img/angular.png" width="120px" /><b> + </b>
+            <img src="img/bootstrap.png" width="120px" /><b> + </b>
+            <img src="img/karma.png" width="120px" /><b> +    </b>
+            <img src="img/jasmine.png" width="120px" /><b> +    </b>
+            <img src="img/brackets.png" width="120px" />
+        </div>
+        <div class="container">
+            <p class="text-center"><strong>Dilmara Ferreira | dill_ferreira@outlook.com</strong></p>
+        </div>
+        </div>
+</footer>    
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!-- Conteudo -->
+<h4>OBS: não consegui fazer o sistema funcionar totalmente, entretanto nesta documentação os meus procedimentos realizados para iniciar o projeto.
+Mas, de qualquer forma apresento o que pude fazer.
+</h4>
+
+<h4>Aplicação Agenda CRUD</h4>
+<p>Antes de começamos o projeto de implementação precisamos instalar algumas tecnologias exigidas no projeto: npm, bower, grut, angular, bootstrap, karma e jasmine. Vamos começa com a instalação no npm.</p>
+
+<h4>Instalação de Tecnologias</h4> 
+
+<p>Antes de começarmos a instalar as ferramentas necessárias, precisamos de 2 programas para que é o Nodejs e Git, ambos se encontram nos links abaixo, são executáveis e simples de instalar.</p> 
+<p>
+<a href="https://nodejs.org/en/">Nobejs</a> <br>
+<a href="https://git-scm.com/downloads">Git</a>
+</p>
+<p>Após finalizar a instalação vamos começa a instalar as tecnologias exigidas para isso abriremos o cmd e digitaremos os seguintes comandos:</p>
+
+>npm -version (verifica a versão do npm)
+
+<p>O npm é a primeira ferramenta instalada, pois é através dela que consigo instalar as demais. Em seguida, vamos instalar o gerenciador de pacotes o bower.</p>
+
+Abra o cmd novamente e digite:<br>
+
+>npm install -g bower (não esqueça de escolher o diretório onde quer que eles seja instalado, o -g significa que irá instalar globalmente em meu computador)
+
+<p>Após a finalização mostrar no cmd algumas opções para informação do projeto preencha o que for necessário, após total finalização ele criara um arquivo chamados bower.json na raiz do seu projeto contendo as informações fornecidas referente ao projeto.</p>
+<p>Continuando, instalaremos os pacotes do bootstrap, angular, grut, karma e jasmine. Para a instalação do bootstrap e angular basta eu digitar os seguintes comandos respectivamente:</p>
+
+>bower install bootstrap --save<br>
+>bower install angular --save
+
+<p>Esses pacotes serão instalados dentro de uma pasta chamada bower_componets criada pelo próprio bower durante sua instalação. Feito isso já podemos adicionar os pacotes do angular e bootstrap no projeto.</p>
+<p>Vamos prosseguir a instalação das demais tecnologias, iremos digitar o seguinte comando no cmd, para a instalação do grunt, o mesmo foi usado para minificar o código, porém sem muito sucesso, pois estava dando erro e não conseguir resolver. Entretando, abaixo tem os procedimentos realizados.</p>
+
+>npm install -g grunt-cli<br>
+
+<p>Será necessário a criação de dois arquivos packge.json e Gruntfile.js. </p>
+<p>O arquivos packge.json irá conter informações do projeto</p>
+<p>Criado estes arquivos vamos para o segundo, o Gruntfile.js. Ele que determina o que será feito do meu arquivo fonte. Seguindo com a instalação, depois disso deveremos instalar alguns pacotes pelo cmd para minificação.</p>
+
+>npm install grunt-contrib-uglify –-save-dev (pacote que permite a minificação)<br>
+
+<p>Em seguida, utilizaremos o sass que é necessário para compilação do grunt no cmd, depois de ter feito as configurações devidas.</p>
+
+>npm install grunt-contrib-sass –save-dev<br>
+
+<p>Como podemos notar o projeto ainda não está acabado, porém possuo uma plugin no grunt chamada de watch, justamente para se tornar automático a minificação mesmo com as alterações no projeto.</p>
+<p>Para compilar basta digitar grunt no diretório do projeto.</p>
+<p>Feito isso vamos a instalação do karma e jasmine. Para fazer teste unitários no projeto, abrindo o cmd novamente vamos digitar os seguintes comandos, lembrando que o karma é uma extensão do jasmine por isso a necessidade de instalação de ambos.</p>
+
+>npm install -g karma<br>
+>npm init teste.conf.js<br>
+
+<h4>Arquitetura</h4>
+<p>Uma pequena demonstração de como funciona o sistema, o funcionamento da aplicação de forma ilustrativa.
+Controllers e Models, onde se encontra os arquivos de JavaScript que faz o controle de tarefas e suas execuções.
+View trabalhamos com HTML, CSS e Bootstrap, que é forma apresentada pelo usuário.
+Angular que interage tanto com controllers, moldels e view.</p>
+<CENTER><img src="../img/arquitetura.PNG" alt="Arquitetura sistema"></CENTER>
+<h4>Diretivas Angular Usadas no Projeto</h4>
+<ul>
+<li>ngmodel</li>
+<li>ngrepeat</li>
+<li>ngrouter</li>
+<li>ngclick</li>
+</ul>
+<h4>Decisões do projeto</h4>
+<p>Tentei seguir de a risca as instruções, porém sem muito sucesso já que não consegui o objetivo desejado. Utilizei a maioria das tecnologias pedidas, para decidir usar e como usar cada uma, avaliei e vi a importância de cada e no tópico mostra como obtive as tecnologias. 
+Maioria das tecnologias não conhecia, e para mim foi uma ótima experiencia fazer parte desse processo seletivo.</p>
+
+<!-- Fim conteudo -->
+
